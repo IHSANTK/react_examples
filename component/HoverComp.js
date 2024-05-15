@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import UpdatedComponent from './NewCompo';
 
-class Counter extends Component {
+class HoverComb extends Component {
     
 
 
@@ -11,12 +11,12 @@ class Counter extends Component {
 
     return (
       <div>
-        <h2>Counter Component</h2>
-        <button onClick={increment}>Clicked {counter} Times</button>
+
+        <h2 onMouseOver={increment}>Hoverd {counter} Times</h2>
       
       </div>
     );
   }
 }
 
-export default UpdatedComponent(Counter);
+export default UpdatedComponent(HoverComb);

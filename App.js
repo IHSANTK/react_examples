@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
+// import Protelsdemo from "./component/Protelsdemo";
+import Counter from "./component/Counter";
+import HoverComp from "./component/HoverComp";
+// import ParentComp from "./component/ParentComp";
+// import RefsDemo from "./component/RefsDemo";
 // import Counter from "./component/Counter";
 // import Message from "./component/Message";
 // import List from "./component/List";
-import Form from "./component/Form";
+// import Form from "./component/Form";
 // import Demo from "./component/Demo"
 
 
@@ -19,8 +24,10 @@ class App extends Component {
       <Demo ><button>action</button></Demo> */}
       {/* <Counter /> */}
       {/* <Message /> */}
-      <Form />
-
+      {/* <Form /> */}
+      {/* <RefsDemo /> */}
+      <Counter />
+      <HoverComp />
       </div>
     );
   }
