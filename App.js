@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
+// import { Userprovider } from "./Usercontext";
+// import ComponentC from "./ComponentC";
+import Hook from "./component/Hook";
 // import Protelsdemo from "./component/Protelsdemo";
-import Counter from "./component/Counter";
-import HoverComp from "./component/HoverComp";
+// import Counter from "./component/Counter";
+// import HoverComp from "./component/HoverComp";
 // import ParentComp from "./component/ParentComp";
 // import RefsDemo from "./component/RefsDemo";
 // import Counter from "./component/Counter";
@@ -10,9 +13,6 @@ import HoverComp from "./component/HoverComp";
 // import List from "./component/List";
 // import Form from "./component/Form";
 // import Demo from "./component/Demo"
-
-
-
 class App extends Component {
 
   render() {
@@ -26,8 +26,14 @@ class App extends Component {
       {/* <Message /> */}
       {/* <Form /> */}
       {/* <RefsDemo /> */}
-      <Counter />
-      <HoverComp />
+      {/* <Counter />
+      <HoverComp /> */}
+
+      {/* <Userprovider value={"ihsan"}>
+        <ComponentC />
+      </Userprovider> */}
+      <Hook />
+
       </div>
     );
   }

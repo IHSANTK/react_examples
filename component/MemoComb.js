@@ -4,6 +4,7 @@ import React from 'react'
     console.log("Rendering Memo Combonent");
   return (
     <div>
+      OK
       {name}
     </div>
   )
