@@ -1,22 +1,42 @@
-import React, { Component } from "react";
-import UpdatedComponent from './NewCompo';
+import React, { useState } from "react";
 
-class Counter extends Component {
+
+const Counter = ()=>  {
     
+  const [count,setcounter]= useState(0)
+  const [color,setcolor]= useState("")
 
 
-  render() {
-
-    const {counter,increment} = this.props
-
-    return (
-      <div>
-        <h2>Counter Component</h2>
-        <button onClick={increment}>Clicked {counter} Times</button>
-      
-      </div>
-    );
+const increment = ()=>{
+       setcounter(count+1)
+       if(count%2===0){
+        setcolor("blue")
+       }else{
+        setcolor("green")
+       }
+}
+const dicrement = ()=>{
+  setcounter(count-1)
+  if(count%2===0){
+   setcolor("blue")
+  }else{
+   setcolor("green")
   }
 }
 
-export default UpdatedComponent(Counter);
+
+
+
+    return (
+      <div style={{ backgroundColor: color, padding: "20px",width:"100px" }}> 
+         <button onClick={increment}>Increment</button>
+        <h2>{count}</h2>
+        <button onClick={dicrement}>dicrement</button>
+       
+      
+      </div>
+    );
+  
+}
+
+export default Counter;
