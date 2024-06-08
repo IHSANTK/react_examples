@@ -2,7 +2,7 @@ import React from "react";
 import { Provider } from 'react-redux';
 import "./App.css";
 import Store from "./redux/Store"
-import Counters from "./Counters";
+import Todo from "./Todo";
 
 const App= ()=> {
 
@@ -10,7 +10,7 @@ const App= ()=> {
     return (
       <Provider store={Store}>
       <div className="App">
-     <Counters />
+        <Todo />
       </div>
       </Provider>
     );
