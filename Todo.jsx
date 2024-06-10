@@ -5,6 +5,7 @@ export default function Todo() {
     const [todos, setTodos] = useState([]);
 
     const handleSave = () => {
+        console.log("oook");
         if (inputValue.trim()) {
             const added = [...todos, { text: inputValue }];
             setTodos(added);
